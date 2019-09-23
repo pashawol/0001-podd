@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
 
 	JSCCommon.inputMask(); 
 	// добавляет подложку для pixel perfect
-	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/podd.png);"></div>')
+	// $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/podd.png);"></div>')
 	// /добавляет подложку для pixel perfect
 
 	// /закрыть/открыть мобильное меню
