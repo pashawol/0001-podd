@@ -1,7 +1,7 @@
 mixin s-contact()
 	// start s-contact
 	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
-		.container
+		.container.lazy-background
 			.row
 				+e.col.col-lg-6.order-lg-last
 					+e.inner
@@ -13,5 +13,5 @@ mixin s-contact()
 						+e.btn.link-modal(href="#") Проконсультироваться
 				.col-lg-6
 					+e.map-wrap
-						<script  async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa46d36a32ecc0c25fdc80589f2aa613bfc2e2e5dcc61555f196c40d506d048c3&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa46d36a32ecc0c25fdc80589f2aa613bfc2e2e5dcc61555f196c40d506d048c3&amp;source=constructor" ></iframe>
 	// end s-contact

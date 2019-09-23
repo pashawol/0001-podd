@@ -35,7 +35,7 @@
 		position: relative;
 		@include media-breakpoint-up(md) {
 
-			&::after{
+			&.visible::after{
 				content: url(../img/@2x/gar-after.png);
 				position: absolute;
 				left: 85%;bottom: -200px;
@@ -66,4 +66,8 @@
 	@include media-breakpoint-down(sm) {}
 	@include media-breakpoint-down(xs) {} 
 
+}
+
+iframe{
+	border: none;
 }
