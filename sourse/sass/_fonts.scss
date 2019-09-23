@@ -1,0 +1,6 @@
+
+
+@include font-face (Gilroy, "../fonts/Gilroy-Regular", $file-formats: woff2);
+@include font-face (Gilroy, "../fonts/Gilroy-SemiBold", 600, $file-formats: woff2);
+@include font-face ("Roboto Slab", "../fonts/RobotoSlab-Regular", $file-formats: woff2);
+@include font-face ("Roboto Slab", "../fonts/RobotoSlab-Bold", bold, $file-formats: woff2);

@@ -1,0 +1,69 @@
+.s-garanty {
+	background-color: #f7f8fa;
+	h2{
+		padding-top: rem(30);
+	}
+	text-align: center;
+	&__col{
+		margin-bottom: rem(53);
+	}
+	&__item{
+		height: 100%;
+		box-shadow: 0 rem(28px) rem(31px) rgba(6, 6, 6, 0.03);
+		border-radius: rem(10px);
+		background-color: #ffffff;
+		padding: rem(20) rem(20);
+	}
+	picture{
+		height: rem(106px);
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		vertical-align: middle;
+		line-height: rem(106);
+		margin-bottom: rem(10);
+
+	}
+	p{
+		line-height: 1;
+	}
+	.row{
+		justify-content: center;
+	}
+	padding-bottom: rem(45);
+	.container{
+		position: relative;
+		@include media-breakpoint-up(md) {
+
+			&::after{
+				content: url(../img/@2x/gar-after.png);
+				position: absolute;
+				left: 85%;bottom: -200px;
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

@@ -1,0 +1,17 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
+		.container
+			.row
+				+e.col.col-lg-6.order-lg-last
+					+e.inner
+						+b.section-title
+							h2 Остались вопросы или&nbsp;сомнения? Позвоните нам!
+						+e.addr Москва, Алтуфьевское ш., д. 48, корпус 1
+						+e.tel(href="tel:+8(495)971-39-71") +8 (495) 971-39-71
+						.small Работаем Пн-Пт: 9:30&nbsp;&mdash; 19:00. Сб, Вс&nbsp;&mdash; выходной
+						+e.btn.link-modal(href="#") Проконсультироваться
+				.col-lg-6
+					+e.map-wrap
+						<script  async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa46d36a32ecc0c25fdc80589f2aa613bfc2e2e5dcc61555f196c40d506d048c3&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+	// end s-contact

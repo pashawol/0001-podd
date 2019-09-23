@@ -1,0 +1,15 @@
+mixin s-sert()
+	// start s-sert
+	+b.SECTION.s-sert.section.lazy-background#s-sert&attributes(attributes)
+		.container
+			+b.section-title
+				h3 Сертификаты и СРО
+			.row
+				- for (var x = 0; x < 6; x++)
+					+e.col.col-lg-2.col-md-4.col-6
+						+e.img-wrap.bg-wrap(href="img/@2x/sert.jpg" data-fancybox="gallery8")
+							+pic("sert.jpg",'bg','lazy')(class="picture-bg")
+							+icon('zoom-in')
+							//- img.object-fit-js.res-i(src="#" data-lazy="img/@2x/rew.jpg", alt="")
+					// /+e.col.col-2
+	// end s-sert

@@ -1,0 +1,22 @@
+mixin s-garanty()
+	// start s-garanty
+	+b.SECTION.s-garanty.section.lazy-background#s-garanty&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Согласование с гарантией
+			.row
+				mixin  li(i,t)
+					+e.col.col-lg-3.col-md-4.col-sm-6
+						+e.item
+							+pic(`gar-${i}`,'','lazy',0)
+							p= t
+				+li("1","Департамент транспорта Москвы")
+				+li("2","Центр организации дорожного движения")
+				+li("3","ГУП Мосгортранс")
+				+li("4","ФСО России")
+				+li("5","БГУ Мосавтодор")
+				+li("6","Федерлаьное дорожное агенство")
+				+li("7","Органы местного управления")
+				
+							//- img.lazy(src="#", alt="")
+	// end s-garanty

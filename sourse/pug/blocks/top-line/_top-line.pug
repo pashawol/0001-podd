@@ -1,0 +1,27 @@
+mixin top-line()
+	// start .top-line
+	+b.top-line.block-with-lazy
+		.container
+			.row
+				+e.col.col-xl-auto.col
+					+e.logo
+						img.res-i(src="img/@2x/logo.png", alt="")
+						+e.logo-text Проектирование и&nbsp;согласование организации дорожного движения
+				+e.col.col-auto
+					+e.link--mail(href="mailto:info@odd.moscow") 
+						+icon("envelope")
+						.d-none.d-md-block   info@odd.moscow
+
+				+e.col.col-xl.col-auto
+					+e.link--tel(href="tel:+8(495)971-39-71") 
+						+icon("tel") 
+						.d-none.d-xl-block
+							| +8 
+							span.text-primary (495)  
+							| 971-39-71
+				+e.col.col-auto
+					+e.btn.link-modal(href="#") Забронировать
+				+e.col.col-auto.d-md-none
+					+b.toggle-menu-mobile--js.d-md-none
+						span
+	// end .top-line

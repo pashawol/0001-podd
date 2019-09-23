@@ -1,0 +1,27 @@
+mixin s-advantages()
+	// start s-advantages
+	+b.SECTION.s-advantages.section.lazy-background#s-advantages&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Наши преимущества
+				
+			.row
+				mixin col(i,t)
+					+e.col.col-lg-6
+						+e.item
+							+e.icon-wrap
+								img.res-i.lazy(src="#" data-src=`img/advantages-${i}.svg`, alt="")
+							block
+				+col('1')
+					p Мы&nbsp;находимся в&nbsp;Москве, наши специалисты бесплатно посетят Ваш объект, учтут все нюансы строительства. Вы&nbsp;получите профессиональный ППР на&nbsp;100%
+				+col('2')
+					p Разрабатываем ППР и&nbsp;ППРк в&nbsp;Москве, Мо&nbsp;и&nbsp;в&nbsp;других регионах&nbsp;РФ уже более 11&nbsp;лет одним и&nbsp;тем&nbsp;же названием компании, ИНН, телефоном и&nbsp;адресом
+				+col('3')
+					p Можем помочь быстро согласовать ППР с&nbsp;Мосгортранс, Мосгоргеотрест (ОПС), График ППР согласовать с&nbsp;ЦОДД, помочь с&nbsp;оформлением Ордера ОАТИ
+				+col('4')
+					p Предоставляем нашим клиентам скидку&nbsp;20% на&nbsp;каждый второй Проект производства работ (ППР)
+				+col('5')
+					p Мы&nbsp;предоставляем нашим клиентам гарантию на&nbsp;проект на&nbsp;весь период строительства объекта и&nbsp;не&nbsp;просим доплат за&nbsp;корректировки ППР
+				+col('6')
+					p  Разрабатываем ППР в&nbsp;строгом соответствии со&nbsp;строительными правилами и&nbsp;ГОСТ, в&nbsp;том числе СП&nbsp;48.13330.2011 &laquo;Организация строительства&raquo;
+	// end s-advantages

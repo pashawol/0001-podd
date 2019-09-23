@@ -1,0 +1,18 @@
+
+mixin mob-mnu()
+	
+	+b.menu-mobile--js.d-md-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			a.link-modal(href="#") Забронировать
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav
+		.container
+			+mnu()
+					
+	// end top-nav

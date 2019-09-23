@@ -1,0 +1,38 @@
+extends layout/main.pug
+
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-type-of-work/_s-type-of-work.pug
+include ../blocks/s-garanty/_s-garanty.pug
+include ../blocks/s-rews/_s-rews.pug
+include ../blocks/s-gal/_s-gal.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-sert/_s-sert.pug
+
+block pagecontent
+ 
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+	+header-block()
+	
+	+s-advantages
+	+s-type-of-work
+	+s-garanty
+	+s-rews
+	+s-gal
+	+s-about
+	+s-sert
+	+s-contact()
+	//- +s-form()
+	//- +footer()
+
